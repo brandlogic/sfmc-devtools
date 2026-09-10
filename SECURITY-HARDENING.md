@@ -28,6 +28,8 @@ with existing 9.0.3 project configurations. The original MIT license is retained
 - Mark this fork private for npm publishing and disable upstream update prompts
   and automatic npm replacement. This does not change GitHub repository visibility.
 - Direct Dependabot to `main` and add a weekly/PR production dependency audit.
+- Align the inherited CI Node matrix with the existing package engine range;
+  Node 21 and 23 are outside that range.
 
 ## Install from a reviewed revision
 
@@ -68,6 +70,8 @@ tests remained pending; lint passed with warnings and TypeScript checks passed.
 The complete repository lockfile audit reported zero known vulnerabilities.
 A fresh production installation from `npm pack --ignore-scripts` also reported
 zero known vulnerabilities; its CLI version and help commands were smoke-tested.
+GitHub CI also passed lint/tests on Node 20.19, 22, 24 and 25, plus the production
+audit and coverage report. Node 24 remains the recommended installation target.
 
 ## Remaining boundaries
 

@@ -15,7 +15,8 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                node: ["20.19", 21, 22, 23, 24, 25]
+                # Match package.json engines; Node 21/23 are not supported.
+                node: ["20.19", 22, 24, 25]
         name: lint & test w/ node v${{ matrix.node }}
         permissions:
             actions: read
