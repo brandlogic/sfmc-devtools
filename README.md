@@ -1,5 +1,12 @@
 # Accenture SFMC DevTools
 
+## Brandlogic security fork
+
+This fork contains security fixes to the upstream 9.0.3 codebase. It is not
+published to npm. `npm install mcdev` installs the upstream package, not this fork.
+See [security changes and installation](SECURITY-HARDENING.md) for the supported
+installation procedure, validation and remaining limitations.
+
 [![view on npm](https://badgen.net/github/release/Accenture/sfmc-devtools)](https://www.npmjs.org/package/mcdev)
 [![view on npm](https://badgen.net/npm/node/mcdev)](https://www.npmjs.org/package/mcdev)
 [![license](https://badgen.net/npm/license/mcdev)](https://www.npmjs.org/package/mcdev)
@@ -13,7 +20,8 @@ Accenture Salesforce Marketing Cloud DevTools (mcdev) is a rapid deployment/roll
 
 ### Install
 
-Run the following to install Accenture SFMC DevTools on your computer:
+For this fork, follow [the installation instructions](SECURITY-HARDENING.md).
+The following command installs the original upstream release only:
 
 ```bash
 npm install -g mcdev
